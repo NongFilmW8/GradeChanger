@@ -1,0 +1,6 @@
+document.querySelectorAll('td').forEach(td => {
+    const grade = td.textContent.trim();
+    if (["A", "B", "B+", "C", "C+"].includes(grade)) {
+        td.innerHTML = "&nbsp;&nbsp;D";
+    }
+});
